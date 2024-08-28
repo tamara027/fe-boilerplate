@@ -12,17 +12,177 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
-  --background-color: white;
-  --light-color: #eee;
-  --dark-color: #ccc;
-  --text-color: black;
+  /* aqua */
+  --color-aqua-100: #e2f7fe;
+  --color-aqua-200: #c1f0fe;
+  --color-aqua-300: #58d4fc;
+  --color-aqua-500: #00bbea; /* default */
+  --color-aqua-700: #1987b2;
+  --color-aqua-800: #126382;
+  --color-aqua-900: #0b3e50;
+
+  /* midnight */
+  --color-midnight-100: #e6e9ea;
+  --color-midnight-200: #cdd3d5;
+  --color-midnight-300: #9ba7ab;
+  --color-midnight-500: #6a7c81;
+  --color-midnight-700: #385057;
+  --color-midnight-800: #1f3a42;
+  --color-midnight-900: #06242d; /* default */
+
+  /* white */
+  --color-white-100: #ffffff; /* default */
+  --color-white-200: #dfdfdf;
+  --color-white-300: #c0c0c0;
+  --color-white-500: #848484;
+  --color-white-700: #4a4a4a;
+  --color-white-800: #313131;
+  --color-white-900: #1f1f1f;
+
+  /* stone */
+  --color-stone-100: #f4efea; /* default */
+  --color-stone-200: #e1d4c6;
+  --color-stone-300: #cab39b;
+  --color-stone-500: #ab855e;
+  --color-stone-700: #6e543a;
+  --color-stone-800: #4d3b28;
+  --color-stone-900: #2f2419;
+
+  /* olympia */
+  --color-olympia-100: #e8edf9;
+  --color-olympia-200: #9db4e3;
+  --color-olympia-300: #4c72cb;
+  --color-olympia-500: #2e61bc; /* default */
+  --color-olympia-700: #28438b;
+  --color-olympia-800: #152140;
+  --color-olympia-900: #0e1321;
+
+  /* crystal */
+  --color-crystal-100: #eef4f8;
+  --color-crystal-200: #c1dbe7; /* default */
+  --color-crystal-300: #9cc5d9;
+  --color-crystal-500: #4e98bb;
+  --color-crystal-700: #2c5c72;
+  --color-crystal-800: #1e3e4d;
+  --color-crystal-900: #def8f0;
+
+  /* oregano */
+  --color-oregano-100: #def8f0;
+  --color-oregano-200: #82e2c5;
+  --color-oregano-300: #24b387;
+  --color-oregano-500: #1c8464; /* default */
+  --color-oregano-700: #165d47;
+  --color-oregano-800: #0f3026;
+  --color-oregano-900: #091814;
+
+  /* cypress */
+  --color-cypress-100: #daf1db;
+  --color-cypress-200: #b6e4b8; /* default */
+  --color-cypress-300: #8fd693;
+  --color-cypress-500: #45ba4b;
+  --color-cypress-700: #37953c;
+  --color-cypress-800: #1c4a1e;
+  --color-cypress-900: #0e250f;
+
+  /* sunset */
+  --color-sunset-100: #fff6e5;
+  --color-sunset-200: #ffeccc;
+  --color-sunset-300: #ffc766;
+  --color-sunset-500: #ffa300; /* default */
+  --color-sunset-700: #cc8100;
+  --color-sunset-800: #664100;
+  --color-sunset-900: #332000;
+
+  /* lemon */
+  --color-lemon-100: #fffad1;
+  --color-lemon-200: #fff6a8; /* default */
+  --color-lemon-300: #fff175;
+  --color-lemon-500: #ffec3d;
+  --color-lemon-700: #d1bc00;
+  --color-lemon-800: #6b6000;
+  --color-lemon-900: #332e00;
+
+  /* tomato */
+  --color-tomato-100: #ffdddb;
+  --color-tomato-200: #ffbbb8;
+  --color-tomato-300: #ff7770;
+  --color-tomato-500: #ff544b; /* default */
+  --color-tomato-700: #ff160a;
+  --color-tomato-800: #850700;
+  --color-tomato-900: #420300;
+
+  /* blossom */
+  --color-blossom-100: #ffe5ec;
+  --color-blossom-200: #ffc7d6;
+  --color-blossom-300: #ffadc3;
+  --color-blossom-500: #ff789b; /* default */
+  --color-blossom-700: #ff2e66;
+  --color-blossom-800: #940027;
+  --color-blossom-900: #4d0014;
+
+  /* seashell */
+  --color-seashell-100: #ffe5f0;
+  --color-seashell-200: #ffc7dd; /* default */
+  --color-seashell-300: #ffe5f0;
+  --color-seashell-500: #ff8fbc;
+  --color-seashell-700: #e6005c;
+  --color-seashell-800: #70002d;
+  --color-seashell-900: #380016;
+
+  /* gradients */
+  --gradient-shallow-olympia: linear-gradient(#F4EFEA, #F4EFEA, #2E61BC);
+  --gradient-shallow-crystal: linear-gradient(#F4EFEA, #F4EFEA, #C1DBE7);
+  --gradient-shallow-oregano: linear-gradient(#F4EFEA, #F4EFEA, #1C8464);
+  --gradient-shallow-cypress: linear-gradient(#F4EFEA, #F4EFEA, #B6E4B8);
+  --gradient-shallow-sunset: linear-gradient(#F4EFEA, #F4EFEA, #FFA300);
+  --gradient-shallow-lemon: linear-gradient(#F4EFEA, #F4EFEA, #FFF6A8);
+  --gradient-shallow-tomato: linear-gradient(#F4EFEA, #F4EFEA, #FF544B);
+  --gradient-shallow-blossom: linear-gradient(#F4EFEA, #F4EFEA, #FF789B);
+  --gradient-shallow-seashell: linear-gradient(#F4EFEA, #F4EFEA, #FFC7DD);
+
+  --gradient-deep-olympia: linear-gradient(#F4EFEA, #2E61BC);
+  --gradient-deep-crystal: linear-gradient(#F4EFEA, #C1DBE7);
+  --gradient-deep-oregano: linear-gradient(#F4EFEA, #1C8464);
+  --gradient-deep-cypress: linear-gradient(#F4EFEA, #B6E4B8);
+  --gradient-deep-sunset: linear-gradient(#F4EFEA, #FFA300);
+  --gradient-deep-lemon: linear-gradient(#F4EFEA, #FFF6A8);
+  --gradient-deep-tomato: linear-gradient(#F4EFEA, #FF544B);
+  --gradient-deep-blossom: linear-gradient(#F4EFEA, #FF789B);
+  --gradient-deep-seashell: linear-gradient(#F4EFEA, #FFC7DD);
+
+  --gradient-tonal-santorini: linear-gradient(#c1dbe7,  #2E61BC);
+  --gradient-tonal-crete: linear-gradient(#b6e4b8,  #1c8464);
+  --gradient-tonal-rhodes: linear-gradient(#fff6a8,  #ffa300);
+  --gradient-tonal-mykonos: linear-gradient(#ffc7dd,  #ff789b);
+  
+  --gradient-exclusive-poseidon: linear-gradient(#b6e4b8,  #2e61bc);
+  --gradient-exclusive-gaia: linear-gradient(#fff6a8,  #1c8464);
+  --gradient-exclusive-helios: linear-gradient(#c1dbe7,  #ffa300);
+  --gradient-exclusive-aphodite: linear-gradient(#ff544b,  #ffc7dd);
+
+  /* spacing */
+  --spacing-0: 0px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: norms;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  /* --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace; */
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -65,7 +225,7 @@ body {
   font-family: var(--body-font-family);
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--color-white);
   display: none;
 }
 
@@ -123,7 +283,7 @@ pre {
 }
 
 main pre {
-  background-color: var(--light-color);
+  background-color: var(--color-aqua);
   padding: 1em;
   border-radius: 0.25em;
   overflow-x: auto;
@@ -132,13 +292,13 @@ main pre {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: var(--color-midnight);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: var(--link-hover-color);
+  color: var(--color-olympia);
 }
 
 /* buttons */
@@ -154,7 +314,7 @@ button {
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
+  color: var(--color);
   background-color: var(--link-color);
   margin: 16px 0;
   white-space: nowrap;
