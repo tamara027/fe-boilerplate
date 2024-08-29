@@ -1,0 +1,114 @@
+.h1-black {
+    font-weight: 900;
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-2xl);
+}
+
+.h2-black {
+    font-weight: 900;
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-xl);
+}
+
+.h3-black {
+    font-weight: 900;
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-lg);
+}
+
+.h3-bold {
+    font-weight: 700;
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-lg);
+}
+
+.h4-bold {
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-md);
+}
+
+.h5-bold {
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-sm);
+}
+
+.copy-large-regular {
+    font-weight: 400;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-sm);
+}
+
+.copy-large-bold {
+    font-weight: 700;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-sm);
+}
+
+.copy-standard-regular {
+    font-weight: 400;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+}
+
+.copy-small-regular {
+    font-weight: 400;
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-xs);
+}
+
+.copy-small-bold {
+    font-weight: 700;
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-xs);
+}
+
+.link-standard {
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-xs);
+}
+
+.link-small {
+    font-weight: 400;
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-xs);
+}
+
+@media (min-width:728px) {
+    .h1-black {
+        font-size: var(--font-size-6xl);
+        line-height: var(--line-height-4xl);
+    }
+
+    .h2-black {
+        font-size: var(--font-size-5xl);
+        line-height: var(--line-height-3xl);
+    }
+
+    .h3-black {
+        font-size: var(--font-size-4xl);
+        line-height: var(--line-height-2xl);
+    }
+
+    .h3-bold {
+        font-size: var(--font-size-4xl);
+        line-height: var(--line-height-2xl);
+    }
+
+    .h4-bold {
+        font-size: var(--font-size-3xl);
+        line-height: var(--line-height-xl);
+    }
+
+    .h5-bold {
+        font-size: var(--font-size-lg);
+        line-height: var(--line-height-mg);
+    }
+
+    .link-standard {
+        font-size: var(--font-size-md);
+        line-height: var(--line-height-sm);
+    }
+}

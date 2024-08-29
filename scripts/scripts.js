@@ -111,6 +111,27 @@ async function loadEager(doc) {
   }
 }
 
+// test functionality
+function addTypography(doc) {
+  const h1 = doc.querySelectorAll('h1');
+  const h2 = doc.querySelectorAll('h2');
+  const p = doc.querySelectorAll('p');
+
+  h1.forEach((h1el) =>{
+    h1el.classList.add('h1-black');
+  });
+
+  h2.forEach((h2el) =>{
+    h2el.classList.add('h2-black');
+  });
+
+  p.forEach((pel) =>{
+    if(pel.parentNode && pel.parentNode.classList.includes('cards-card-body')) return;
+    pel.classList.add('copy-standard-regular');
+  });
+}
+
+
 /**
  * Loads everything that doesn't need to be delayed.
  * @param {Element} doc The container element
@@ -132,6 +153,7 @@ async function loadLazy(doc) {
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
+  addTypography(doc);
 }
 
 /**
