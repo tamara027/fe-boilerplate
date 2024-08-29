@@ -117,20 +117,19 @@ function addTypography(doc) {
   const h2 = doc.querySelectorAll('h2');
   const p = doc.querySelectorAll('p');
 
-  h1.forEach((h1el) =>{
+  h1.forEach((h1el) => {
     h1el.classList.add('h1-black');
   });
 
-  h2.forEach((h2el) =>{
+  h2.forEach((h2el) => {
     h2el.classList.add('h2-black');
   });
 
-  p.forEach((pel) =>{
-    if(pel.parentNode && pel.parentNode.classList.includes('cards-card-body')) return;
+  p.forEach((pel) => {
+    if (pel.parentNode && pel.parentNode.classList.includes('cards-card-body')) return;
     pel.classList.add('copy-standard-regular');
   });
 }
-
 
 /**
  * Loads everything that doesn't need to be delayed.

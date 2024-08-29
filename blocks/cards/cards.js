@@ -20,10 +20,10 @@ export default function decorate(block) {
     img.closest('picture').replaceWith(optimizedPic);
   });
   ul.querySelectorAll('.cards-card-body p').forEach((p) => {
-    if(p.querySelector('strong')) {
-      p.classList.add('copy-large-bold')
+    if (p.querySelector('strong')) {
+      p.classList.add('copy-large-bold');
     } else {
-      p.classList.add('copy-small-regular')
+      p.classList.add('copy-small-regular');
     }
   });
   block.textContent = '';
