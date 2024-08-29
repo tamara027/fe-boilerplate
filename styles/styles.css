@@ -12,6 +12,7 @@
 
 :root {
   /* colors */
+
   /* aqua */
   --color-aqua-100: #e2f7fe;
   --color-aqua-200: #c1f0fe;
@@ -31,7 +32,7 @@
   --color-midnight-900: #06242d; /* default */
 
   /* white */
-  --color-white-100: #ffffff; /* default */
+  --color-white-100: #fff; /* default */
   --color-white-200: #dfdfdf;
   --color-white-300: #c0c0c0;
   --color-white-500: #848484;
@@ -130,6 +131,8 @@
   --color-seashell-900: #380016;
 
   /* gradients */
+
+  /* shallow */
   --gradient-shallow-olympia: linear-gradient(#F4EFEA, #F4EFEA, #2E61BC);
   --gradient-shallow-crystal: linear-gradient(#F4EFEA, #F4EFEA, #C1DBE7);
   --gradient-shallow-oregano: linear-gradient(#F4EFEA, #F4EFEA, #1C8464);
@@ -140,6 +143,7 @@
   --gradient-shallow-blossom: linear-gradient(#F4EFEA, #F4EFEA, #FF789B);
   --gradient-shallow-seashell: linear-gradient(#F4EFEA, #F4EFEA, #FFC7DD);
 
+  /* deep */
   --gradient-deep-olympia: linear-gradient(#F4EFEA, #2E61BC);
   --gradient-deep-crystal: linear-gradient(#F4EFEA, #C1DBE7);
   --gradient-deep-oregano: linear-gradient(#F4EFEA, #1C8464);
@@ -150,11 +154,13 @@
   --gradient-deep-blossom: linear-gradient(#F4EFEA, #FF789B);
   --gradient-deep-seashell: linear-gradient(#F4EFEA, #FFC7DD);
 
+  /* tonal */
   --gradient-tonal-santorini: linear-gradient(#c1dbe7,  #2E61BC);
   --gradient-tonal-crete: linear-gradient(#b6e4b8,  #1c8464);
   --gradient-tonal-rhodes: linear-gradient(#fff6a8,  #ffa300);
   --gradient-tonal-mykonos: linear-gradient(#ffc7dd,  #ff789b);
-  
+
+  /* exclusive */
   --gradient-exclusive-poseidon: linear-gradient(#b6e4b8,  #2e61bc);
   --gradient-exclusive-gaia: linear-gradient(#fff6a8,  #1c8464);
   --gradient-exclusive-helios: linear-gradient(#c1dbe7,  #ffa300);
@@ -178,11 +184,9 @@
   --spacing-88: 88px;
   --spacing-96: 96px;
 
-
   /* fonts */
   --body-font-family: norms;
   --heading-font-family: var(--body-font-family);
-  /* --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace; */
 
   /* body sizes */
   --body-font-size-m: 22px;
