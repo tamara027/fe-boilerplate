@@ -76,7 +76,7 @@
     line-height: var(--line-height-xs);
 }
 
-@media (min-width:728px) {
+@media (width>= 728px) {
     .h1-black {
         font-size: var(--font-size-6xl);
         line-height: var(--line-height-4xl);
