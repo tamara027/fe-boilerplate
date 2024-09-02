@@ -211,5 +211,16 @@
         "label": "Reference"
       }
     ]
+  },
+  {
+    "id": "gallery",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image"
+      }
+    ]
   }
 ]
