@@ -103,8 +103,24 @@
             "value": "primary"
           },
           {
+            "name": "primary-filled",
+            "value": "primary-filled"
+          },
+          {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "secondary-filled",
+            "value": "secondary-filled"
+          },
+          {
+            "name": "inverted",
+            "value": "inverted"
+          },
+          {
+            "name": "inverted-filled",
+            "value": "inverted-filled"
           }
         ]
       }
