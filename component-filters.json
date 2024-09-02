@@ -28,13 +28,20 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "gallery"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "gallery",
+    "components": [
+      "gallery-item"
     ]
   }
 ]
