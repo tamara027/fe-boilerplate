@@ -126,7 +126,7 @@ function addTypography(doc) {
   });
 
   p.forEach((pel) => {
-    if (pel.parentNode && pel.parentNode.classList.includes('cards-card-body')) return;
+    if (pel.parentNode && pel.parentNode.classList.contains('cards-card-body')) return;
     pel.classList.add('copy-standard-regular');
   });
 }
