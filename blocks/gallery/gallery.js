@@ -16,23 +16,37 @@ export default function decorate(block) {
     const slideElement = document.createElement('div');
     moveInstrumentation(galleryItem, slideElement);
 
-    const img = document.createElement('img');
-
-    const captionElement = galleryItem.querySelector('p');
-    const caption = captionElement.textContent;
-
     const pictureElement = galleryItem.querySelector('picture');
-    const imgElement = pictureElement.querySelector('img');
+    const itemType = pictureElement ? 'gallery-item' : 'gallery-item-youtube';
 
-    const imgSrc = imgElement.getAttribute('src');
+    let caption;
+    let fullscreenSrc;
+    let thumbnailSrc;
+
+    if (itemType === 'gallery-item') {
+      const captionElement = galleryItem.querySelector('p');
+      caption = captionElement.textContent;
+      const imgElement = pictureElement.querySelector('img');
+      const imgSrc = imgElement.getAttribute('src');
+      fullscreenSrc = imgSrc;
+      thumbnailSrc = imgSrc;
+    } else if (itemType === 'gallery-item-youtube') {
+      const [captionElement, youtubeIdElement] = [...galleryItem.querySelectorAll('p')];
+      caption = captionElement.textContent;
+      const videoID = youtubeIdElement.textContent;
+      fullscreenSrc = `https://www.youtube.com/watch?v=${videoID}`;
+      thumbnailSrc = `https://img.youtube.com/vi/${videoID}/maxresdefault.jpg`;
+    }
+
+    const img = document.createElement('img');
 
     slideElement.classList.add('f-carousel__slide');
 
-    slideElement.setAttribute('data-src', imgSrc);
+    slideElement.setAttribute('data-src', fullscreenSrc);
     slideElement.setAttribute('data-fancybox', `gallery-${galleryCounter}`);
     slideElement.setAttribute('data-caption', caption);
 
-    img.setAttribute('src', imgSrc);
+    img.setAttribute('src', thumbnailSrc);
 
     slideElement.append(img);
 
