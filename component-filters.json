@@ -41,7 +41,8 @@
   {
     "id": "gallery",
     "components": [
-      "gallery-item"
+      "gallery-item",
+      "gallery-item-youtube"
     ]
   }
 ]

@@ -230,5 +230,24 @@
         "multi": false
       }
     ]
+  },
+  {
+    "id": "gallery-item-youtube",
+    "fields": [
+      {
+        "component": "text",
+        "name": "caption",
+        "value": "",
+        "label": "Caption",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "youtubeid",
+        "value": "",
+        "label": "YouTube ID",
+        "valueType": "string"
+      }
+    ]
   }
 ]
