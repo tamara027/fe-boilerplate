@@ -17,7 +17,9 @@ export default function decorate(block) {
     moveInstrumentation(galleryItem, slideElement);
 
     const pictureElement = galleryItem.querySelector('picture');
-    const itemType = pictureElement ? 'gallery-item' : 'gallery-item-youtube';
+    const anchorElement = galleryItem.querySelector('a');
+
+    const itemType = (pictureElement || anchorElement) ? 'gallery-item' : 'gallery-item-youtube';
 
     let caption;
     let fullscreenSrc;
@@ -26,10 +28,15 @@ export default function decorate(block) {
     if (itemType === 'gallery-item') {
       const captionElement = galleryItem.querySelector('p');
       caption = captionElement.textContent;
-      const imgElement = pictureElement.querySelector('img');
-      const imgSrc = imgElement.getAttribute('src');
-      fullscreenSrc = imgSrc;
-      thumbnailSrc = imgSrc;
+      if (pictureElement) {
+        const imgElement = pictureElement.querySelector('img');
+        const imgSrc = imgElement.getAttribute('src');
+        fullscreenSrc = imgSrc;
+        thumbnailSrc = imgSrc;
+      } else {
+        fullscreenSrc = anchorElement.getAttribute('href');
+        thumbnailSrc = 'https://placehold.co/600x400';
+      }
     } else if (itemType === 'gallery-item-youtube') {
       const [captionElement, youtubeIdElement] = [...galleryItem.querySelectorAll('p')];
       caption = captionElement.textContent;
