@@ -44,5 +44,11 @@
       "gallery-item",
       "gallery-item-youtube"
     ]
+  },
+  {
+    "id": "celestyal-button",
+    "components": [
+      ""
+    ]
   }
 ]
