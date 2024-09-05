@@ -4,7 +4,6 @@ a.button:any-link {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
-  text-decoration: none;
   padding: var(--spacing-12) var(--spacing-32);
   text-align: center;
   font-style: normal;
