@@ -1,1 +1,34 @@
-/* empty for now */
+/* carousel 3rd party styles */
+/* stylelint-disable selector-class-pattern */
+
+/* revert global styles from button */
+.f-carousel__dots button {
+    color: initial;
+}
+
+.gallery button::before,
+.gallery button::after {
+    content: initial;
+}
+
+.gallery button:hover,
+.gallery button:focus {
+    background: initial;
+}
+
+.gallery .f-carousel__slide img {
+    width: 100%
+}
+
+/* global fancybox styles */
+.fancybox__container button::before,
+.fancybox__container button::after {
+    content: initial;
+}
+
+.fancybox__container button:hover,
+.fancybox__container button:focus {
+    background: initial;
+}
+/* stylelint-enable selector-class-pattern */
+
