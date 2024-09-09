@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/extensions,import/no-unresolved
 import AEMHeadless from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.4.1';
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
