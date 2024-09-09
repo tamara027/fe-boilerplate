@@ -26,6 +26,6 @@ export default function decorate(block) {
       p.classList.add('copy-small-regular');
     }
   });
-  block.textContent = '';
+  // block.textContent = '';
   block.append(ul);
 }

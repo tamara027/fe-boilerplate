@@ -19,6 +19,12 @@ a.button:any-link {
   text-decoration: none;
 }
 
+a.button:hover,
+a.button:focus {
+    text-decoration: none;
+    color: currentColor;
+}
+
 .primary,
 a.primary:any-link {
   border: 1.5px solid var(--color-aqua-500);

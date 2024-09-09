@@ -1,6 +1,6 @@
 /* buttons */
 .button,
-a.button:any-link {
+a.button {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
@@ -17,18 +17,24 @@ a.button:any-link {
   text-overflow: ellipsis;
   border-radius: 30px;
   text-decoration: none;
+  background: transparent;
+}
+
+a.button:hover,
+a.button:focus {
+    text-decoration: none;
 }
 
 .primary,
-a.primary:any-link {
+a.primary {
   border: 1.5px solid var(--color-aqua-500);
   color: var(--color-aqua-500);
 }
 
 .primary:hover,
 .primary:focus,
-a.primary:any-link:hover,
-a.primary:any-link:focus {
+a.primary:hover,
+a.primary:focus {
   border-color: var(--color-aqua-700);
   color: var(--color-aqua-700);
   cursor: pointer;
@@ -36,14 +42,14 @@ a.primary:any-link:focus {
 
 .primary:disabled,
 .primary:disabled:hover,
-a.primary:disabled:any-link,
-a.primary:any-link:disabled:hover {
+a.primary:disabled,
+a.primary:disabled:hover {
   opacity: 0.5;
   cursor: unset;
 }
 
 .primary-filled,
-a.primary-filled:any-link {
+a.primary-filled {
   border: 1.5px solid var(--color-aqua-500);
   color: var(--color-white-100);
   background-color: var(--color-aqua-500);
@@ -51,6 +57,7 @@ a.primary-filled:any-link {
 
 .primary-filled:hover,
 .primary-filled:focus {
+  border-color:var(--color-aqua-700);
   background-color: var(--color-aqua-700);
   cursor: pointer;
 }
@@ -63,15 +70,15 @@ a.primary-filled:any-link {
 }
 
 .secondary,
-a.secondary:any-link {
+a.secondary {
   border: 1.5px solid var(--color-sunset-500);
   color: var(--color-sunset-500);
 }
 
 .secondary:hover,
 .secondary:focus,
-a.secondary:any-link:hover,
-a.secondary:any-link:focus {
+a.secondary:hover,
+a.secondary:focus {
     border-color: var(--color-sunset-700);
     color: var(--color-sunset-700);
 }
@@ -84,7 +91,7 @@ a.secondary:any-link:focus {
 }
 
 .secondary-filled,
-a.secondary-filled:any-link {
+a.secondary-filled {
   background-color: var(--color-sunset-500);
   border: 1.5px solid var(--color-sunset-500);;
   color: var(--color-white-100);
@@ -92,8 +99,8 @@ a.secondary-filled:any-link {
 
 .secondary-filled:hover,
 .secondary-filled:focus,
-a.secondary-filled:any-link:hover,
-a.secondary-filled:any-link:focus {
+a.secondary-filled:hover,
+a.secondary-filled:focus {
     background-color: var(--color-sunset-700);
     border-color: var(--color-sunset-700);
 }
@@ -106,15 +113,15 @@ a.secondary-filled:any-link:focus {
 }
 
 .inverted,
-a.inverted:any-link {
+a.inverted {
   border: 1.5px solid var(--color-white-100);
   color: var(--color-white-100);
 }
 
 .inverted:hover,
 .inverted:focus,
-a.inverted:any-link:hover,
-a.inverted:any-link:focus {
+a.inverted:hover,
+a.inverted:focus {
     border-color: #F4EFEA;
     color: #F4EFEA;
 }
@@ -127,7 +134,7 @@ a.inverted:any-link:focus {
 }
 
 .inverted-filled,
-a.inverted-filled:any-link {
+a.inverted-filled {
   background-color: var(--color-white-100);
   border: 1.5px solid var(--color-white-100);;
   color: var(--color-midnight-900);
@@ -135,8 +142,8 @@ a.inverted-filled:any-link {
 
 .inverted-filled:hover,
 .inverted-filled:focus,
-a.inverted-filled:any-link:hover,
-a.inverted-filled:any-link:focus {
+a.inverted-filled:hover,
+a.inverted-filled:focus {
     background-color: #F4EFEA;
     border-color: #F4EFEA;
 }
